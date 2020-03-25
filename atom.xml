@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geraldljw.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-25T14:46:36.278Z</updated>
+    <title>GeraldLJW</title>
+    <updated>2020-03-25T15:03:34.114Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geraldljw.github.io"/>
     <link rel="self" href="https://geraldljw.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>温故而知新,GeraldLJW的个人博客小站</subtitle>
     <logo>https://geraldljw.github.io/images/avatar.png</logo>
     <icon>https://geraldljw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, GeraldLJW</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://geraldljw.github.io/post/hello-gridea/</id>
