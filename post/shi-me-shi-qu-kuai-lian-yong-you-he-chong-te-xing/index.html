@@ -1,22 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://geraldljw.github.io</id>
-    <title>GeraldLJW</title>
-    <updated>2020-07-22T04:28:30.866Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://geraldljw.github.io"/>
-    <link rel="self" href="https://geraldljw.github.io/atom.xml"/>
-    <subtitle>温故而知新,GeraldLJW的个人博客小站</subtitle>
-    <logo>https://geraldljw.github.io/images/avatar.png</logo>
-    <icon>https://geraldljw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, GeraldLJW</rights>
-    <entry>
-        <title type="html"><![CDATA[什么是区块链？拥有何种特性？]]></title>
-        <id>https://geraldljw.github.io/post/shi-me-shi-qu-kuai-lian-yong-you-he-chong-te-xing/</id>
-        <link href="https://geraldljw.github.io/post/shi-me-shi-qu-kuai-lian-yong-you-he-chong-te-xing/">
-        </link>
-        <updated>2020-07-22T04:09:14.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>什么是区块链？拥有何种特性？ | GeraldLJW</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://geraldljw.github.io/favicon.ico?v=1595392106174">
+<link rel="stylesheet" href="https://geraldljw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+1.1 区块链的定义
+区块链不但是比特币的底层技术，更是一种采用了分布式数据存储、点对点网络、共识机制、加密算法等计算机技术的新型应用模式。狭义来讲，区块链是一种采用密码学算法和链式关联结构组织数据块，由参与节点共同维护以保证数据几乎不可..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://geraldljw.github.io">
+        <img src="https://geraldljw.github.io/images/avatar.png?v=1595392106174" class="site-logo">
+        <h1 class="site-title">GeraldLJW</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新,GeraldLJW的个人博客小站
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://geraldljw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">什么是区块链？拥有何种特性？</h2>
+            <div class="post-date">2020-07-22</div>
+            
+            <div class="post-content" v-pre>
+              <!-- more -->
 <p>1.1 区块链的定义<br>
 区块链不但是比特币的底层技术，更是一种采用了分布式数据存储、点对点网络、共识机制、加密算法等计算机技术的新型应用模式。狭义来讲，区块链是一种采用密码学算法和链式关联结构组织数据块，由参与节点共同维护以保证数据几乎不可能被修改的、最终保证数据一致性的分布式数据存储技术；是一种按照时间顺序将数据区块以顺序相连的方式组合成的一种链式数据结构，并以密码学方式保证的不可篡改和不可伪造的分布式账本。广义来讲，区块链指在所有节点均不可信的点对点网络中，通过共识算法和经济学常识建立信任机制，并最终实现节点数据存储一致性的网络系统。</p>
 <!-- more -->
@@ -36,38 +116,46 @@
 在区块链系统中，每笔交易信息都会被记录在每一个节点的账本中，而每新增一笔交易，所有节点也都能成为该笔交易的「检查站」，并且使用密码学原理检测其正确性。由此，即使没有交易中心，各种交易仍能安全运行。由于区块链系统中没有中心节点，不仅信息透明度大幅提升，更不会有中心节点出错全盘皆错的安全性问题。</p>
 <!-- more -->
 <pre><code>此文学习于：一本书读懂区块链 作者：王腾鹤，赵昌宇等，若涉及版权问题请联系我进行删除，此文章本人仅是作为阅读书籍的一个博客记录。</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://geraldljw.github.io/post/hello-gridea/</id>
-        <link href="https://geraldljw.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://geraldljw.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
