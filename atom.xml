@@ -2,14 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geraldljw.github.io</id>
     <title>GeraldLJW</title>
-    <updated>2020-07-23T01:39:14.149Z</updated>
+    <updated>2021-06-24T08:45:38.121Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geraldljw.github.io"/>
     <link rel="self" href="https://geraldljw.github.io/atom.xml"/>
     <subtitle>温故而知新,GeraldLJW的个人博客小站</subtitle>
     <logo>https://geraldljw.github.io/images/avatar.png</logo>
     <icon>https://geraldljw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, GeraldLJW</rights>
+    <rights>All rights reserved 2021, GeraldLJW</rights>
+    <entry>
+        <title type="html"><![CDATA[Springboot问题（一）Maven]]></title>
+        <id>https://geraldljw.github.io/post/springboot-wen-ti-yi-maven/</id>
+        <link href="https://geraldljw.github.io/post/springboot-wen-ti-yi-maven/">
+        </link>
+        <updated>2021-06-24T01:56:33.000Z</updated>
+        <content type="html"><![CDATA[<p>出现问题情况：<br>
+Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:2.5.1 from/to central<br>
+经常是网络问题换成热点，点击右上方Maven项目下的install尝试重新安装即可解决<br>
+<img src="https://geraldljw.github.io/post-images/1624499972474.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[什么是区块链？拥有何种特性？]]></title>
         <id>https://geraldljw.github.io/post/shi-me-shi-qu-kuai-lian-yong-you-he-chong-te-xing/</id>
