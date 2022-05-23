@@ -2,14 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geraldljw.github.io</id>
     <title>GeraldLJW</title>
-    <updated>2021-06-24T08:45:38.121Z</updated>
+    <updated>2022-05-23T12:11:03.299Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geraldljw.github.io"/>
     <link rel="self" href="https://geraldljw.github.io/atom.xml"/>
     <subtitle>温故而知新,GeraldLJW的个人博客小站</subtitle>
     <logo>https://geraldljw.github.io/images/avatar.png</logo>
     <icon>https://geraldljw.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, GeraldLJW</rights>
+    <rights>All rights reserved 2022, GeraldLJW</rights>
+    <entry>
+        <title type="html"><![CDATA[网页的相关概念]]></title>
+        <id>https://geraldljw.github.io/post/wang-ye-de-xiang-guan-gai-nian/</id>
+        <link href="https://geraldljw.github.io/post/wang-ye-de-xiang-guan-gai-nian/">
+        </link>
+        <updated>2022-05-23T10:31:47.000Z</updated>
+        <summary type="html"><![CDATA[<p>1.什么是网页？</p>
+<pre><code>网站是网页集合
+网页是HTML格式文件，由图片、链接、文字、声音、视频等元素组成。
+文件为xx.html
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<p>1.什么是网页？</p>
+<pre><code>网站是网页集合
+网页是HTML格式文件，由图片、链接、文字、声音、视频等元素组成。
+文件为xx.html
+</code></pre>
+<!-- more -->
+<p>2.什么是HTML?</p>
+<pre><code>超文本标记语言
+是标记语言，不是编程语言。
+超文本有2层含义：
+①可以加入图片、声音、动画、多媒体等内容
+②超链接文本
+</code></pre>
+<!-- more -->
+<p>3.浏览器内核</p>
+<pre><code>firefox火狐--&gt;Gecko
+Safari--&gt;Webkit
+chrome/Opera--&gt;Blink
+</code></pre>
+<!-- more -->
+<p>4.Web标准</p>
+<pre><code>主要包括结构、表现、行为。
+结构--&gt;网页元素--&gt;HTML文件😋
+表现--&gt;外观样式，CSS--&gt;CSS文件😺
+行为--&gt;交互，主要是学Javascript--&gt;JS文件🎅
+</code></pre>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Springboot问题（一）Maven]]></title>
         <id>https://geraldljw.github.io/post/springboot-wen-ti-yi-maven/</id>
