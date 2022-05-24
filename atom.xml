@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geraldljw.github.io</id>
     <title>GeraldLJW</title>
-    <updated>2022-05-23T12:11:03.299Z</updated>
+    <updated>2022-05-24T03:08:15.813Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geraldljw.github.io"/>
     <link rel="self" href="https://geraldljw.github.io/atom.xml"/>
@@ -10,6 +10,128 @@
     <logo>https://geraldljw.github.io/images/avatar.png</logo>
     <icon>https://geraldljw.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, GeraldLJW</rights>
+    <entry>
+        <title type="html"><![CDATA[网页基础字符集和标签]]></title>
+        <id>https://geraldljw.github.io/post/wang-ye-zi-fu-ji/</id>
+        <link href="https://geraldljw.github.io/post/wang-ye-zi-fu-ji/">
+        </link>
+        <updated>2022-05-23T13:46:03.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="一-字符集"><code>一、字符集</code></h1>
+<pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="一-字符集"><code>一、字符集</code></h1>
+<pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+</code></pre>
+<!-- more -->
+<pre><code>charset常用的值有：GB2312、BIG5、GBK和UTF-8。
+UTF-8基本上包含了全世界所有国家需要用到的字符。✊
+</code></pre>
+<h1 id="二-文档声明"><code>二、文档声明</code></h1>
+<pre><code>&lt;!DOCTYPE html&gt;
+文档类型声明标签，高速浏览器这个页面采取HTML5版本来显示页面。
+</code></pre>
+<!-- more -->
+<pre><code>&lt;html lang=&quot;en&quot;&gt;
+告诉浏览器或者搜索引擎这是一个英文网站，本页面采取英文来显示。
+</code></pre>
+<!-- more -->
+<pre><code>&lt;html lang=&quot;zh-CN&quot;&gt;
+告诉浏览器或者搜索引擎这是一个中文网站，本页面采取中文来显示。
+</code></pre>
+<h1 id="三-标签"><code>三、标签</code></h1>
+<p><strong>1.标题标签</strong></p>
+<pre><code>&lt;h1&gt;~&lt;h6&gt;
+标题一共六级选，文字加粗一行显，由大到小依次减。💪👉😭
+</code></pre>
+<p><strong>2.段落标签</strong></p>
+<pre><code>&lt;p&gt;&lt;/p&gt;
+单词paragraph缩写，意为段落，可以把文档分割为若干段落。
+特点：1、文本在一个段落中会根据浏览器窗口的大小自动换行
+2、段落和段落之间保有空隙。
+</code></pre>
+<p><strong>3.换行标签</strong></p>
+<pre><code>&lt;br /&gt;
+单词break的缩写，意为打断，换行。
+文本强制换行😏
+特点：1、是个单标签。2、只是简单地开始新一行，跟段落不一样，段落之间会插入一些垂直的间距。
+</code></pre>
+<p><strong>4.文本格式化标签</strong></p>
+<pre><code>&lt;strong&gt;&lt;/strong&gt;推荐，语义更强烈👍
+&lt;b&gt;&lt;/b&gt;
+加粗标签
+&lt;em&gt;&lt;/em&gt;👍
+&lt;i&gt;&lt;/i&gt;
+倾斜标签
+&lt;del&gt;&lt;/del&gt;👍
+&lt;s&gt;&lt;/s&gt;
+删除线标签
+&lt;ins&gt;&lt;/ins&gt;👍
+&lt;u&gt;&lt;/u&gt;
+下划线标签
+</code></pre>
+<p><strong>5.div标签和span标签</strong></p>
+<pre><code>&lt;div&gt;和&lt;span&gt;是没有语义的，他们就是一个盒子，用来装内容的
+div是division的缩写，表示分割、分区。span意为跨度、跨距。
+特点：
+1、&lt;div&gt;标签用来布局，但是现在一行只能放一个&lt;div&gt;.相当于一个大盒子独占一行
+2、&lt;span&gt;标签用来布局，一行上可以放多个&lt;span&gt;.相当于一个小盒子，一行上可以放多个小盒子.
+一般是div里嵌套span
+</code></pre>
+<p><strong>6.图像标签和路径（重点）</strong></p>
+<pre><code>&lt;img src=&quot;图像URL&quot; /&gt;单表签
+src是&lt;img&gt;标签的必须属性，用于指定图像文件的路径和文件名。
+alt--&gt;文本--&gt;替换文本。图像显示不出来的时候显示的文字。
+title--&gt;文本--&gt;提示文本。鼠标放到图像上，显示的文字。
+width--&gt;像素--&gt;设置图像的宽度。
+height--&gt;像素--&gt;设置图像的高度。
+border--&gt;像素--&gt;设置图像的边框粗细。
+
+👉注意：属性之间不分先后顺序，均已空格键分开，属性采取键值对的格式。
+
+相对路径：图片相对于HTML页面的位置
+同一级路径--&gt;符号：无--&gt;例如：&lt;img src=&quot;baidu.gif&quot;&gt;
+下一级路径--&gt;符号：/--&gt;例如：&lt;img src=&quot;images/baidu.gif&quot;&gt;
+上一级路径--&gt;符号：../--&gt;例如：&lt;img src=&quot;../baidu.gif&quot;&gt;
+绝对路径：电脑盘里的哪个位置或者完整的网络地址
+平时开发项目很少用。
+</code></pre>
+<p><strong>7.超链接标签</strong></p>
+<pre><code>&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;
+href--&gt;URL地址
+target--&gt;_self为默认值，_blank为在新窗口中打开方式。👐
+
+1、外部链接：比如&lt;a href=&quot;http://www.qq.com&quot; target=&quot;_blank&quot;&gt;腾讯&lt;/a&gt;
+得以http:// 开头描述
+
+2、内部链接：网站内部页面的相互链接，页面进行跳转
+只需要文件名比如&lt;a href=&quot;index.html&quot;&gt;&lt;/a&gt;
+
+3、空链接：比如&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+没有确定链接目标时先用#代替
+
+4、下载链接：如果href里面是一个文件或者压缩包等形式，会进行下载
+比如&lt;a href=&quot;image.zip&quot;&gt;&lt;/a&gt;
+
+5、网页元素链接：比如文本、音频、图片、表格、视频等都可以添加超链接
+比如&lt;a href=&quot;http://www.qq.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image.jpg&quot;&gt;&lt;/a&gt;
+
+6、锚点链接：点我们点击链接时，可以快速定位道页面中的某个位置
+在链接文本的href属性中，设置属性值为#名字的形式，如&lt;a href=&quot;#two&quot;&gt;第2集&lt;/a&gt;
+在目标位置标签，里面添加一个id属性=刚才的名字，如&lt;h3 id=&quot;two&quot;&gt;第2集介绍&lt;/a&gt;
+</code></pre>
+<p><strong>8.注释标签和特殊字符</strong></p>
+<pre><code>注释标签：&lt;!-- 注释内容 --&gt;
+快捷键：ctrl+/
+特殊字符：
+空格--&gt;&amp;nbsp;
+小于号&lt;--&gt;&amp;It;
+大于号&gt;--&gt;&amp;gt;
+重点以上三个👆，还有很多.......
+详情跳转至https://blog.csdn.net/u013778905/article/details/53177042
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[网页的相关概念]]></title>
         <id>https://geraldljw.github.io/post/wang-ye-de-xiang-guan-gai-nian/</id>
