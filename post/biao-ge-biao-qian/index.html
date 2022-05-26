@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>表格标签学习 | GeraldLJW</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://geraldljw.github.io/favicon.ico?v=1653570697546">
+<link rel="stylesheet" href="https://geraldljw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一、表格的基本语法
+表格主要用来展示数据。
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;单元格内的文字&lt;/td&gt;
+        ...
+    &lt;/tr&gt;
+    ..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://geraldljw.github.io">
+        <img src="https://geraldljw.github.io/images/avatar.png?v=1653570697546" class="site-logo">
+        <h1 class="site-title">GeraldLJW</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新,GeraldLJW的个人博客小站
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://geraldljw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">表格标签学习</h2>
+            <div class="post-date">2022-05-26</div>
+            
+              <div class="feature-container" style="background-image: url('https://images.unsplash.com/photo-1546188994-07c34f6e5e1b?crop=entropy&amp;cs=tinysrgb&amp;fm=jpg&amp;ixlib=rb-1.2.1&amp;q=80&amp;raw_url=true&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1171')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p><strong>一、表格的基本语法</strong></p>
+<p>表格主要用来展示数据。</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;单元格内的文字&lt;/td&gt;
+        ...
+    &lt;/tr&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<p>1、<code>&lt;table&gt;&lt;/table&gt;</code>是用于定义表格的标签。<br>
+2、<code>&lt;tr&gt;&lt;/tr&gt;</code>标签用于定义表格中的<strong>行</strong>，必须嵌套在<code>&lt;table&gt;&lt;/table&gt;</code>标签中。💡<br>
+3、<code>&lt;td&gt;&lt;/td&gt;</code>用于定义表格中的<strong>单元格</strong>，必须嵌套在<code>&lt;tr&gt;&lt;/tr&gt;</code>标签中。💡<br>
+4、字母td指表格数据（table data），即数据单元格的内容。</p>
+<p><strong>二、表格单元格标签</strong></p>
+<p>一般表头单元格位于表格的第一行或第一列，表头单元格里面的文本内容<strong>加粗居中</strong>显示。💪</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;单元格内的文字&lt;/th&gt;
+        ...
+    &lt;/tr&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<p><code>&lt;th&gt;</code>标签标识HTML表格的表头部分（table head的缩写）</p>
+<p><strong>三、表格属性</strong></p>
+<p>实际开发不常用，后面通过CSS设置。<br>
+目前作为提前了解</p>
+<table>
+        <tr>
+            <th>属性名</th><th>属性值</th><th>描述</th>
+        </tr>
+        <tr>
+            <td>align</td><td>left、center、right</td><td>规定表格相对周围元素的对齐方式</td>
+       </tr>
+       <tr>
+            <td>border</td><td>1或""</td><td>规定表格单元是否拥有边框，默认为"",表示没有边框</td>
+       </tr>
+       <tr>
+            <td>cellpadding</td><td>像素值</td><td>规定单元边沿与其内容之间的空白，默认1像素</td>
+       </tr>
+       <tr>
+            <td>cellspacing</td><td>像素值</td><td>规定单元格之间的空白，默认2像素</td>
+       </tr>
+       <tr>
+            <td>width</td><td>像素值或百分比</td><td>规定表格的宽度</td>
+       </tr>
+</table>
+<p>表格里也可以尝试插入相关链接，拓展表格功能！</p>
+<p><strong>四、表格结构标签</strong></p>
+<p>分成头部区域和主体区域，使语义更清晰明确。即<code>&lt;thead&gt;&lt;/thead&gt;</code>和<code>&lt;tbody&gt;&lt;/tbody&gt;</code>。</p>
+<p>1、<code>&lt;thead&gt;&lt;/thead&gt;</code>：用于定义表格的头部。<code>&lt;thead&gt;</code>内部必须拥有<code>&lt;tr&gt;</code>标签。一般是位于第一行。<br>
+2、<code>&lt;tbody&gt;&lt;/tbody&gt;</code>：用于定义表格的主体，主要用于放数据本体。<br>
+3、以上标签都是在<code>&lt;table&gt;&lt;/table&gt;</code>内的。👈</p>
+<p><strong>五、合并单元格</strong></p>
+<p>三步走。<br>
+合并方式：</p>
+<ul>
+<li>跨行合并：<code>rowspan=&quot;合并单元格的个数&quot;</code>。👉注意：两行之间。</li>
+<li>跨列合并：<code>colspan=&quot;合并单元格的个数&quot;</code>。👉注意：两列之间。</li>
+</ul>
+<p>目标单元格：（写合并代码）</p>
+<ul>
+<li>跨行：最上侧单元格为目标单元格，写合并代码</li>
+<li>跨列：最左侧单元格为目标单元格，写合并代码</li>
+</ul>
+<p>👉注意：<strong>合并完后删除多余的单元格代码</strong>！！！👐</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://geraldljw.github.io/post/wang-ye-zi-fu-ji/">
+                  <h3 class="post-title">
+                    网页基础字符集和标签
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

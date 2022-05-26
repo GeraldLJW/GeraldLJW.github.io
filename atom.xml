@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://geraldljw.github.io</id>
     <title>GeraldLJW</title>
-    <updated>2022-05-24T03:08:15.813Z</updated>
+    <updated>2022-05-26T13:11:47.243Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://geraldljw.github.io"/>
     <link rel="self" href="https://geraldljw.github.io/atom.xml"/>
@@ -10,6 +10,81 @@
     <logo>https://geraldljw.github.io/images/avatar.png</logo>
     <icon>https://geraldljw.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, GeraldLJW</rights>
+    <entry>
+        <title type="html"><![CDATA[表格标签学习]]></title>
+        <id>https://geraldljw.github.io/post/biao-ge-biao-qian/</id>
+        <link href="https://geraldljw.github.io/post/biao-ge-biao-qian/">
+        </link>
+        <updated>2022-05-26T11:54:52.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>一、表格的基本语法</strong></p>
+<p>表格主要用来展示数据。</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;单元格内的文字&lt;/td&gt;
+        ...
+    &lt;/tr&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<p>1、<code>&lt;table&gt;&lt;/table&gt;</code>是用于定义表格的标签。<br>
+2、<code>&lt;tr&gt;&lt;/tr&gt;</code>标签用于定义表格中的<strong>行</strong>，必须嵌套在<code>&lt;table&gt;&lt;/table&gt;</code>标签中。💡<br>
+3、<code>&lt;td&gt;&lt;/td&gt;</code>用于定义表格中的<strong>单元格</strong>，必须嵌套在<code>&lt;tr&gt;&lt;/tr&gt;</code>标签中。💡<br>
+4、字母td指表格数据（table data），即数据单元格的内容。</p>
+<p><strong>二、表格单元格标签</strong></p>
+<p>一般表头单元格位于表格的第一行或第一列，表头单元格里面的文本内容<strong>加粗居中</strong>显示。💪</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;单元格内的文字&lt;/th&gt;
+        ...
+    &lt;/tr&gt;
+    ...
+&lt;/table&gt;
+</code></pre>
+<p><code>&lt;th&gt;</code>标签标识HTML表格的表头部分（table head的缩写）</p>
+<p><strong>三、表格属性</strong></p>
+<p>实际开发不常用，后面通过CSS设置。<br>
+目前作为提前了解</p>
+<table>
+        <tr>
+            <th>属性名</th><th>属性值</th><th>描述</th>
+        </tr>
+        <tr>
+            <td>align</td><td>left、center、right</td><td>规定表格相对周围元素的对齐方式</td>
+       </tr>
+       <tr>
+            <td>border</td><td>1或""</td><td>规定表格单元是否拥有边框，默认为"",表示没有边框</td>
+       </tr>
+       <tr>
+            <td>cellpadding</td><td>像素值</td><td>规定单元边沿与其内容之间的空白，默认1像素</td>
+       </tr>
+       <tr>
+            <td>cellspacing</td><td>像素值</td><td>规定单元格之间的空白，默认2像素</td>
+       </tr>
+       <tr>
+            <td>width</td><td>像素值或百分比</td><td>规定表格的宽度</td>
+       </tr>
+</table>
+<p>表格里也可以尝试插入相关链接，拓展表格功能！</p>
+<p><strong>四、表格结构标签</strong></p>
+<p>分成头部区域和主体区域，使语义更清晰明确。即<code>&lt;thead&gt;&lt;/thead&gt;</code>和<code>&lt;tbody&gt;&lt;/tbody&gt;</code>。</p>
+<p>1、<code>&lt;thead&gt;&lt;/thead&gt;</code>：用于定义表格的头部。<code>&lt;thead&gt;</code>内部必须拥有<code>&lt;tr&gt;</code>标签。一般是位于第一行。<br>
+2、<code>&lt;tbody&gt;&lt;/tbody&gt;</code>：用于定义表格的主体，主要用于放数据本体。<br>
+3、以上标签都是在<code>&lt;table&gt;&lt;/table&gt;</code>内的。👈</p>
+<p><strong>五、合并单元格</strong></p>
+<p>三步走。<br>
+合并方式：</p>
+<ul>
+<li>跨行合并：<code>rowspan=&quot;合并单元格的个数&quot;</code>。👉注意：两行之间。</li>
+<li>跨列合并：<code>colspan=&quot;合并单元格的个数&quot;</code>。👉注意：两列之间。</li>
+</ul>
+<p>目标单元格：（写合并代码）</p>
+<ul>
+<li>跨行：最上侧单元格为目标单元格，写合并代码</li>
+<li>跨列：最左侧单元格为目标单元格，写合并代码</li>
+</ul>
+<p>👉注意：<strong>合并完后删除多余的单元格代码</strong>！！！👐</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[网页基础字符集和标签]]></title>
         <id>https://geraldljw.github.io/post/wang-ye-zi-fu-ji/</id>
